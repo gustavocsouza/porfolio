@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  color: black;
+  background-color:#7fdeff;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -31,3 +40,4 @@ body {
     text-wrap: balance;
   }
 }
+
