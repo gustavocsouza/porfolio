@@ -1,7 +1,7 @@
-export default function PrimaryButton() {
+export default function PrimaryButton({ href }) {
   return (
     <a 
-      href="#" 
+      href={href} 
       className={`
         px-8 py-2 bg-gradient-to-r from-pink-primary to-cyan-primary 
         text-black rounded-full font-bold opacity-60 hover:opacity-100
