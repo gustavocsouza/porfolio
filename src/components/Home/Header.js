@@ -7,9 +7,8 @@ import {
   IoLogoHtml5,
 } from 'react-icons/io';
 
-
-
 export default function Header() {
+  
   return (
     <div
       style={{
@@ -18,11 +17,11 @@ export default function Header() {
         backgroundSize: "contain",
         backgroundPosition: "right"
       }}
-      className="h-screen flex items-center"
+      className="lg:h-screen py-24 px-4"
     >
-      <div className="align-middle justify-center text-center h-full flex flex-col w-[45%]">
-        <div className="w-3/2 text-right m-auto gap-2 flex flex-col items-end">
-          <div className="flex gap-2 text-2xl">
+      <div className="lg:h-full flex flex-col lg:w-1/2">
+        <div className="lg:m-auto mx-auto flex flex-col lg:items-end">
+          <div className="flex gap-2 text-2xl mb-2">
             <a 
               className="hover:scale-110 transition-all cursor-pointer"
               href="https://www.linkedin.com/in/gustavo-cardoso-souza/" target="_blank"
@@ -37,13 +36,17 @@ export default function Header() {
               <IoLogoGithub className="text-pink-primary"/>
             </a>
           </div>
-          <h1 className="text-5xl font-thin">
+
+          <h1 className="text-5xl font-light">
             Gustavo Cardoso
           </h1>
-          <h2 className="text-2xl mb-8">
-            Desenvolvedor Front-end
+          <h2 className="text-lg font-thin tracking-widest uppercase mb-8">
+            Front-end developer
           </h2>
-          <PrimaryButton href="#projects" />
+
+          <PrimaryButton tailwindStyle={'text-center'} className="text-center" href="#projects">
+            Projetos
+          </PrimaryButton>
         </div>
       </div>
     </div>

@@ -19,7 +19,19 @@ module.exports = {
       boxShadow: {
         'glow': '7px 0 20px rgba(127, 222, 255, 0.3), -7px 0 20px rgba(229, 116, 188, 0.4)',
         'hover-glow': '10px 0 50px rgba(127, 222, 255, 0.4), -10px 0 50px rgba(229, 116, 188, 0.6)',
+        'border-shadow': `0 0 .1rem #fff, 0 0 .1rem #fff, 0 0 2rem rgba(229, 116, 188, 0.2), 0 0 0.8rem rgba(229, 116, 188, 0.2), 0 0 1rem rgba(229, 116, 188, 0.2), inset 0 0 2rem rgba(229, 116, 188, 0.2);`
       },
+      animation: {
+        'color-pulse': `
+          100% {
+            border-color: rgba(127, 222, 255, 0.3);
+          }
+          
+          0% {
+            border-color: rgba(229, 116, 188, 0.4);
+          }
+        `
+      }
     },
   },
   plugins: [],
