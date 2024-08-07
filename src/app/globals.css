@@ -32,6 +32,8 @@ html {
 body {
   color: rgb(var(--foreground-rgb));
   background: black;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 @layer utilities {
